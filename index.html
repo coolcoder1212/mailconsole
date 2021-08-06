@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Julian's Console </title>
+    </head>
+    <body>
+        <audio id="MAIL" src="mailsound.mp3"></audio>
+        <h1> Open Julian's Console </h1>
+        <button onclick = "playmail()"> Click me! </button>
+        <h2> right click then click on inspect :) </h2>
+    <script>
+        console.log("This is my first class in VSC");
+        var name = "julian ";
+        console.log(name);
+        var surname = "CHENG";
+        console.log(surname);
+        var full_name = name.concat(surname);
+        console.log(full_name);
+        var length_of_name = full_name.length;
+        console.log(length_of_name);
+        var random = "This is a bad sentence!";
+        console.log(random);
+        var correctrandom = random.replace("bad", "good");
+        console.log(correctrandom);
+        var capitalname = name.toUpperCase();
+        console.log(capitalname);
+        var lowercasename = surname.toLowerCase();
+        console.log(lowercasename);
+
+        var power = Math.pow(2 , 3);
+        console.log(power);
+        var maxnum = Math.max(17481, 18375, 12200, 194886, 8577597377);
+        console.log(maxnum);
+        var minnum = Math.min(284, 7146, 2818, 0.1);
+        console.log(minnum);
+
+        function playmail() {
+            document.getElementById("MAIL").play();
+        }
+        </script>
+    </body>
+</html>
